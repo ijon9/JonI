@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> ClearBit Demo </title>
+  </head>
+
+  <body>
+    <table border=5px>
+      <tr>
+        <th> Name </th>
+        <th> Domain </th>
+        <th> Logo </th>
+     {% for item in res %}
+        <tr>
+            <td> {{item['name']}} </td>
+            <td> {{item['domain']}} </td>
+            <td> <img src={{item['logo']}}> </td>
+          </tr>
+          {% endfor %}
+        </table>
+
+        <p> This table displays the name, domain name and logo of a company. Here,
+          I put google into the query, and it returned a dictionary of all the companies with google
+          in its name. </p>
+  </body>
+
+</html>
