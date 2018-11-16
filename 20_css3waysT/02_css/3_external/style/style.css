@@ -1,0 +1,42 @@
+#body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: Gray;
+}
+h1 {
+  background:LightGray;
+  color: White;
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+}
+body {
+  font-family: sans-serif;
+  background: DimGray;
+}
+.container {
+  display:flex;
+}
+#navbar {
+  width: 15%;
+  padding-left: 10px;
+}
+ul {
+  color: White; list-style: none; padding: 0px;
+}
+.navItem {
+  color: white;
+  text-decoration: none;
+}
+#main {
+  width: 75%;
+}
+#copyright {
+  background: #454545;
+  color: DimGray;
+  text-align: right;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
