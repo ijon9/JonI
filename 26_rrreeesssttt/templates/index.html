@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> ClearBit Demo </title>
+  </head>
+
+  <body>
+<!-- Guardian Search -->
+    <h1> Guardian search content for Fortnite </h1>
+    <table border=5px>
+      <tr>
+        <th> Web Title </th>
+        <th> Web URL </th>
+        <th> Web Publication Date </th>
+      </tr>
+      {% for site in guard %}
+        <tr>
+          <td> {{site['webTitle']}} </td>
+          <td> {{site['webUrl']}} </td>
+          <td> {{site['webPublicationDate']}} </td>
+        </tr>
+        {% endfor %}
+      </table>
+
+<!-- Google Books Search -->
+      <h1> Google Books Search of Info about The Name of the Wind </h1>
+      <ul>
+        <li> <b>Title:</b> {{gb['title']}} </li>
+        <li> <b>Author: </b> {{gb['authors'][0]}} </li>
+        <li> <b>Description:</b> {{gb['description']}} </li>
+      </ul>
+
+<!-- Numbers Search -->
+<h1> Random Number Fact </h1>
+      <p>
+        {{num}}
+      </p>
+  </body>
+
+</html>
