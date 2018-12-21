@@ -1,4 +1,4 @@
-//ToBeDetermined -- Mohammed Uddin and Isaac Jon
+//[] -- Mohammed Uddin and Isaac Jon
 //
 //
 //
@@ -32,7 +32,7 @@ var addItem = function(e) {
 var button = document.getElementById("b");
 button.addEventListener('click',addItem);
 
-var fib = function(n) {
+var fib2 = function(n) {
 	if (n<2){
 		return 1;
 	}
@@ -41,7 +41,7 @@ var fib = function(n) {
 	}
 };
 
-var fib2 = function(n){ //code from Bill Ni's comment on Dynamic Programming QAF post
+var fib = function(n){ //code from Bill Ni's comment on Dynamic Programming QAF post
 	var window = [0, 1];
 
 	if(n < 2){
@@ -68,7 +68,7 @@ var addFib2 = function(e) {
 	console.log(e);
 	var list = document.getElementById("fiblist2");
 	var item = document.createElement("li");
-	item.innerHTML = fib2(list.childElementCount);
+	item.innerHTML = parseInt(list[list.childElementCount-1].innerHTML) + parseInt(list[list.childElementCount-2].innerHTML);
 	list.appendChild(item);
 }
 
